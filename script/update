@@ -7,4 +7,4 @@ printf "\t$now..."
 git add .
 git commit -q -m "$now"
 
-printf " done!\n\n"
+printf " done!\n"
