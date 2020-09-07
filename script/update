@@ -1,0 +1,10 @@
+#!/bin/bash
+now=$(date +'%F at %R %Z')
+
+echo "Staging files and committing with message..."
+printf "\t$now..."
+
+git add .
+git commit -q -m "$now"
+
+printf " done!\n\n"
