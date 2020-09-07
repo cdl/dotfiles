@@ -1,5 +1,5 @@
 #!/bin/bash
-now=$(date +'%F at %R %Z')
+now=$(date +'%F at %T %Z')
 
 echo "Staging files and committing with message..."
 printf "\t$now..."
