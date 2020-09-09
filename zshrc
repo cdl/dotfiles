@@ -105,7 +105,7 @@ alias k="kubectl"
 alias h="helm"
 alias dc="docker-compose"
 
-# add to go path
+# add go to path
 export PATH="/usr/local/go/bin:$PATH"
 
 # add brew to path
