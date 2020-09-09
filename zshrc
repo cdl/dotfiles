@@ -101,6 +101,8 @@ source $ZSH/oh-my-zsh.sh
 # convenience helpers
 alias vim="nvim"
 alias tmux="tmux -2"
+alias k="kubectl"
+alias h="helm"
 alias dc="docker-compose"
 
 # add to go path

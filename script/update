@@ -1,6 +1,16 @@
 #!/bin/bash
 now=$(date +'%F at %T %Z')
 
+# TODO: Make this more robust by first checking if these files exist
+#       and only rm & cp-ing over the files that do.
+
+echo "Pulling in latest dotfiles..."
+
+rm kitty.conf tmux.conf zshrc
+cp ~/.config/kitty/kitty.conf ./kitty.conf
+cp ~/.tmux.conf ./tmux.conf
+cp ~/.zshrc ./zshrc
+
 echo "Staging files and committing with message..."
 printf "\t$now..."
 
