@@ -1,0 +1,59 @@
+@import "./base16-waybar/colors/base16-default-dark.css";
+
+/*
+    waybar.css
+    updated 2022-06-22
+
+    required pacman packages:
+    - otf-font-awesome
+    - ttf-input
+
+    required submodules (git clone to `~/.config/waybar`)
+    - https://github.com/mnussbaum/base16-waybar
+*/
+
+* {
+    border: none;
+    border-radius: 0;
+
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: @base00;
+    color: @base07;
+}
+
+#waybar:hover {
+    opacity: 1.0;
+}
+
+#workspaces button {
+    font-size: 1.25em;
+    background: @base00;
+    color: @base04;
+    padding: 6px;
+    margin: 0;
+}
+
+#workspaces button:hover {
+    border: none;
+    text-shadow: none;
+}
+
+#workspaces button.focused {
+    background: @base0B;
+    color: @base00;
+}
+
+#mode {
+    color: red;
+    background: white;
+}
+
+#network, #cpu, #memory, #temperature, #clock, #tray {
+    margin: 0px 0.25em;
+    font-size: 0.9em;
+}
