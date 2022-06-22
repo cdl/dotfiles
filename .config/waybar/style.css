@@ -6,7 +6,7 @@
 
     required pacman packages:
     - otf-font-awesome
-    - ttf-input
+    - inter-font
 
     required submodules (git clone to `~/.config/waybar`)
     - https://github.com/mnussbaum/base16-waybar
