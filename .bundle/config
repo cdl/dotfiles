@@ -1,0 +1,4 @@
+---
+# Provide openssl & zstd from homebrew when installing mysql2 gem.
+# Paths can be found with "brew --prefix openssl@1.1" and "brew --prefix zstd".
+BUNDLE_BUILD__MYSQL2: --with-ldflags="-L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/zstd/lib" --with-cppflags="-I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/zstd/include"
